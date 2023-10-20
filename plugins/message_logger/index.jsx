@@ -221,7 +221,7 @@ const DIE = {
           type: "MESSAGE_UPDATE",  
           message: {
             ...newMsg,
-            content: `${originalMessage?.content}  ${Edited}${event?.message?.content ?? ''}`,
+            content: `${originalMessage?.content} ${Edited}${event?.message?.content ?? ''}`,
             guild_id: ChannelStore.getChannel(originalMessage?.channel_id)?.guild_id,
             edited_timestamp: "invalid_timestamp",
           },
